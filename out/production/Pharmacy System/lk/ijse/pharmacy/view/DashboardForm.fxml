@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="dashboardpane" prefHeight="669.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pharmacy.controller.DashboardFormController">
+   <children>
+      <BorderPane layoutX="373.0" layoutY="104.0" prefHeight="669.0" prefWidth="1068.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="115.0" layoutY="-75.0" prefHeight="45.0" prefWidth="1068.0" styleClass="semi-top-form" stylesheets="@../assets/dashboardStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <FontAwesomeIcon iconName="STETHOSCOPE" layoutX="14.0" layoutY="35.0" size="2em" text="" />
+                        <Label layoutX="49.0" layoutY="17.0" text="Pharmacy Management System">
+                           <font>
+                              <Font name="Candara" size="15.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="963.0" layoutY="1.0" prefHeight="46.0" prefWidth="103.0" />
+                     </children>
+                  </AnchorPane>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" styleClass="close" stylesheets="@../assets/loginStyle.css" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                     <onAction>#dCloseOnAction</onAction>
+                     <graphic>
+                        <FontAwesomeIcon iconName="CLOSE" size="2em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="619.0" prefWidth="244.0" styleClass="nav-form" stylesheets="@../assets/dashboardStyle.css" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIcon iconName="USER_MD" layoutX="75.0" layoutY="136.0" size="10em" />
+                  <Label layoutX="81.0" layoutY="153.0" text="Welcome,">
+                     <font>
+                        <Font name="Tahoma" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="104.0" layoutY="183.0" text="User">
+                     <font>
+                        <Font name="Tahoma" size="19.0" />
+                     </font>
+                  </Label>
+                  <Line endX="100.0" layoutX="123.0" layoutY="217.0" startX="-100.0" strokeWidth="2.0" />
+                  <Button layoutX="10.0" layoutY="258.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="189.0" styleClass="navi-btn" stylesheets="@../assets/dashboardStyle.css" text="Dashboard" />
+                  <FontAwesomeIcon iconName="DASHBOARD" layoutX="40.0" layoutY="286.0" size="2em" />
+                  <Button layoutX="10.0" layoutY="310.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="189.0" styleClass="navi-btn" stylesheets="@../assets/dashboardStyle.css" text="Add Medicines" />
+                  <FontAwesomeIcon glyphStyleClass="" iconName="PLUS_CIRCLE" layoutX="40.0" layoutY="338.0" size="2em" />
+                  <Button layoutX="10.0" layoutY="358.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="189.0" styleClass="navi-btn" stylesheets="@../assets/dashboardStyle.css" text="Dashboard" />
+                  <FontAwesomeIcon iconName="+" layoutX="40.0" layoutY="386.0" size="2em" />
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
